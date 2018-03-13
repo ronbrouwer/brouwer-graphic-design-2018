@@ -1,0 +1,193 @@
+/***************/
+
+/* SITE STYLES */
+
+/***************/
+
+/* Typography */
+
+body {
+	font-family: $base-font;
+}
+
+p,
+h3,
+h4 {
+	margin: 15px 0;
+}
+
+h3,
+h4 {
+	font-weight: $black;
+}
+
+p {
+	line-height: 150%;
+}
+
+h2 {
+	font-size: 3em
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 1.5em;
+}
+
+/* Background Styles */
+
+.bg-full {
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.bg-width {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-color: white;
+}
+
+.bg-homepage {
+	background-image: url(../images/rbdgd-bg-sm.jpg);
+}
+
+.bg-product {
+	background-image: url(../images/crystal-sky.svg);
+}
+
+/* Homepage */
+
+.homepage-splash {
+	margin-top: -150px;
+}
+
+/* Text Box Styles */
+
+.text-box {
+	padding: 100px 0;
+}
+
+.text-box_small {
+	padding: 25px;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	text-align: center;
+}
+
+.text-box_align {
+	text-align: right;
+}
+
+.text-box_images {
+	position: relative;
+}
+
+.text-box_bg-white {
+	background-color: none;
+}
+
+.text-box_bg-white h3 {
+	color: $orange;
+}
+
+.text-box_bg-white h4 {
+	color: $drkblue;
+}
+
+.text-box_bg-blue {
+	background-color: $drkblue;
+	color: white;
+}
+
+.text-box_bg-blue h4 {
+	color: $orange;
+}
+
+.text-box_bg-orange {
+	background-color: $orange;
+	color: white;
+}
+
+.text-box_border-blue {
+	border: 1px solid $drkblue;
+}
+
+.text-box_svg {
+	padding: 0 20% 5% 20%;
+}
+
+.text-box_jpg {
+	padding-right: 10%;
+	padding-top: 15px;
+}
+
+.text-box_png {
+	position: relative;
+	margin-bottom: -25%;
+	z-index: 100;
+}
+
+.text-box_small img {
+	margin-top: -200px;
+}
+
+.text-box_small {
+	margin-top: 200px;
+}
+
+/* Feature Styles */
+
+.feature_title {
+	text-align: center;
+	margin-top: 7%;
+}
+
+.feature_title h2 {
+	font-weight: $black;
+	color: $drkblue;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.feature_title h5 {
+	color: gray;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	margin-bottom: 48px;
+}
+
+.feature_subtitle {
+	border-bottom: 1px solid $drkblue;
+}
+
+.feature_subtitle h3 {
+	color: $orange;
+	text-align: right;
+}
+
+/* Scroll Button */
+
+.scroll-btn {
+	display: block;
+	width: 100%;
+	font-size: 2em;
+	text-align: center;
+}
+
+.scroll-btn_white {
+	color: white;
+}
+
+.scroll-btn_orange {
+	color: $orange;
+}

@@ -1,0 +1,90 @@
+/*****************/
+
+/* MEDIA QUERIES */
+
+/*****************/
+
+/* Max Width 768px */
+
+@media only screen and (max-width: 768px) {
+	.nav-table ul li {
+		margin: 0 10px;
+	}
+}
+
+/* Min Width 770 and Max Width 1025px */
+
+@media only screen and (min-width: 770px) and (max-width: 1025px) {
+	.homepage-brand {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 75%;
+	}
+}
+
+/* Min Width 1025px */
+
+@media only screen and (min-width: 1025px) {
+	html {
+		background: url(../images/mountains.svg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	.bg-homepage {
+		background-image: url(../images/rbdgd-bg.jpg);
+	}
+}
+
+/* Max Width 1025px */
+
+@media only screen and (max-width: 1025px) {
+	.homepage-splash {
+		margin-top: -100px;
+	}
+	.nav-list li {
+		display: none;
+	}
+	.nav-bottom {
+		display: block;
+	}
+	.text-box {
+		padding: 50px 0;
+	}
+	.text-box_png {
+		margin-bottom: 0;
+	}
+	.text-box_jpg {
+		padding-right: 0;
+		padding-bottom: 24px;
+	}
+	.text-box_align {
+		text-align: left;
+	}
+
+	.feature_title {
+		margin-top: 0;
+	}
+	.feature_title h2 {
+		letter-spacing: initial;
+	}
+	.feature_title h5 {
+		letter-spacing: initial;
+		margin-bottom: 24px;
+	}
+	.feature_subtitle {
+		border: none;
+		margin-bottom: 24px;
+	}
+	.feature_subtitle h3 {
+		text-align: center;
+	}
+
+	.pic-resize {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+}

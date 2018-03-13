@@ -1,0 +1,477 @@
+/**********/
+/* GLOBAL */
+/**********/
+/* Box Model Fix */
+/* line 9, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+html {
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* line 14, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 19, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* line 25, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+img {
+  width: 100%;
+}
+
+/* line 29, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+/* Clearfix */
+/* line 36, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Vertically Center Content */
+/* line 44, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.center-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*****************/
+/* SITE SPECIFIC */
+/*****************/
+/* RBDGD Colors */
+/* Fonts */
+/* Typography */
+/* line 72, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 76, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+p,
+h3,
+h4 {
+  margin: 15px 0;
+}
+
+/* line 82, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+h3,
+h4 {
+  font-weight: 800;
+}
+
+/* line 87, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+p {
+  line-height: 150%;
+}
+
+/* line 91, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+h2 {
+  font-size: 3em;
+}
+
+/* line 95, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+h3 {
+  font-size: 2em;
+}
+
+/* line 99, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+h4 {
+  text-transform: uppercase;
+}
+
+/* line 103, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+h5 {
+  font-size: 1.5em;
+}
+
+/* Background Styles */
+/* line 109, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.bg-full {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 116, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.bg-width {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: white;
+}
+
+/* line 123, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.bg-homepage {
+  background-image: url(../images/rbdgd-bg-sm.jpg);
+}
+
+/* line 127, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.bg-product {
+  background-image: url(../images/crystal-sky.svg);
+}
+
+/* Homepage */
+/* line 133, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.homepage-splash {
+  margin-top: -150px;
+}
+
+/* Navigation */
+/* line 139, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav_main-menu {
+  width: 100%;
+  background: #c96420;
+  position: fixed;
+  z-index: 100;
+}
+
+/* line 146, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav-table {
+  display: table;
+  /* Use this code to horizontally centre an inline list */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 153, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav-table ul li {
+  display: inline-block;
+  width: 200px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+/*Simple Ghost Button Component */
+/* line 162, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav-btn {
+  width: 100%;
+  float: left;
+  line-height: 40px;
+  border: 1px solid;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+  transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -webkit-transition: background-color 0.15s ease-in-out;
+}
+
+/* line 176, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav-btn:focus,
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 181, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav-btn_blue {
+  border-color: #3d4b5d;
+  color: #3d4b5d;
+}
+
+/* line 186, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav-btn_white {
+  border-color: white;
+  color: white;
+}
+
+/* line 191, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav-list li {
+  display: inline;
+  width: 20%;
+  float: left;
+  padding: 5px;
+}
+
+/* line 198, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav_home-logo {
+  width: 50px;
+  margin: 5px auto;
+  display: block;
+}
+
+/* Text Box Styles */
+/* line 206, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box {
+  padding: 100px 0;
+}
+
+/* line 210, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_small {
+  padding: 25px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+/* line 217, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_align {
+  text-align: right;
+}
+
+/* line 221, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_images {
+  position: relative;
+}
+
+/* line 225, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_bg-white {
+  background-color: none;
+}
+
+/* line 229, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_bg-white h3 {
+  color: #c96420;
+}
+
+/* line 233, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_bg-white h4 {
+  color: #3d4b5d;
+}
+
+/* line 237, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_bg-blue {
+  background-color: #3d4b5d;
+  color: white;
+}
+
+/* line 242, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_bg-blue h4 {
+  color: #c96420;
+}
+
+/* line 246, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_bg-orange {
+  background-color: #c96420;
+  color: white;
+}
+
+/* line 251, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_border-blue {
+  border: 1px solid #3d4b5d;
+}
+
+/* line 255, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_svg {
+  padding: 0 20% 5% 20%;
+}
+
+/* line 259, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_jpg {
+  padding-right: 10%;
+  padding-top: 15px;
+}
+
+/* line 264, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_png {
+  position: relative;
+  margin-bottom: -25%;
+  z-index: 100;
+}
+
+/* Feature Styles */
+/* line 272, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.feature_title {
+  text-align: center;
+  margin-top: 7%;
+}
+
+/* line 277, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.feature_title h2 {
+  font-weight: 800;
+  color: #3d4b5d;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* line 284, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.feature_title h5 {
+  color: gray;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-bottom: 48px;
+}
+
+/* line 291, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.feature_subtitle {
+  border-bottom: 1px solid #3d4b5d;
+}
+
+/* line 295, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.feature_subtitle h3 {
+  color: #c96420;
+  text-align: right;
+}
+
+/* Scroll Button */
+/* line 302, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.scroll-btn {
+  display: block;
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* line 309, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.scroll-btn_white {
+  color: white;
+}
+
+/* line 313, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.scroll-btn_orange {
+  color: #c96420;
+}
+
+/* Sticky Footer Navigation */
+/* line 319, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav-bottom {
+  display: none;
+}
+
+/* line 323, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav-bottom_menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #c96420;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* line 334, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav-bottom_menu li {
+  display: inline-block;
+  width: 20%;
+  line-height: 50px;
+  text-align: center;
+}
+
+/* line 341, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav-bottom_menu a {
+  float: left;
+  width: 100%;
+  color: white;
+}
+
+/* line 347, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav-bottom_menu a:focus,
+.nav-bottom_menu a:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 354, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.nav-bottom_menu img {
+  display: block;
+  width: 30px;
+  margin: 10px auto;
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+/* Min Width 768px */
+@media only screen and (min-width: 768px) {
+  /* line 369, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  html {
+    background: url(../images/mountains.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  /* line 376, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  .bg-homepage {
+    background-image: url(../images/rbdgd-bg.jpg);
+  }
+}
+
+/* Max Width 1025px */
+@media only screen and (max-width: 1025px) {
+  /* line 384, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  .homepage-splash {
+    margin-top: -100px;
+  }
+  /* line 388, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  .nav-list li {
+    display: none;
+  }
+  /* line 392, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  .text-box {
+    padding: 50px 0;
+  }
+  /* line 395, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  .text-box_png {
+    margin-bottom: 0;
+  }
+  /* line 398, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  .text-box_jpg {
+    padding-right: 0;
+    padding-bottom: 24px;
+  }
+  /* line 402, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  .text-box_align {
+    text-align: left;
+  }
+  /* line 406, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  .feature_title {
+    margin-top: 0;
+  }
+  /* line 409, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  .feature_title h2 {
+    letter-spacing: initial;
+  }
+  /* line 412, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  .feature_title h5 {
+    letter-spacing: initial;
+    margin-bottom: 24px;
+  }
+  /* line 416, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  .feature_subtitle {
+    border: none;
+    margin-bottom: 24px;
+  }
+  /* line 420, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  .feature_subtitle h3 {
+    text-align: center;
+  }
+  /* line 424, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  .pic-resize {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+  }
+  /* line 429, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+  .nav-bottom {
+    display: block;
+  }
+}
+
+/* Junk */
+/* line 436, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_small img {
+  margin-top: -200px;
+}
+
+/* line 440, /Applications/MAMP/htdocs/brouwer-graphic-design-2018/scss/style.scss */
+.text-box_small {
+  margin-top: 200px;
+}
+
+/*# sourceMappingURL=../css/style.map */

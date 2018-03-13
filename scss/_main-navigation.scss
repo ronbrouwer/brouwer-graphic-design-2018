@@ -1,0 +1,113 @@
+/*******************/
+
+/* MAIN NAVIGATION */
+
+/*******************/
+
+.nav_main-menu {
+	width: 100%;
+	background: $orange;
+	position: fixed;
+	z-index: 100;
+}
+
+.nav-table {
+	display: table;
+	/* Use this code to horizontally centre an inline list */
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nav-table ul li {
+	display: inline-block;
+	width: 200px;
+	margin: 0 20px;
+	text-align: center;
+}
+
+/*Simple Ghost Button Component */
+
+.nav-btn {
+	width: 100%;
+	float: left;
+	line-height: 40px; //To vertically centre a single line of text
+	border: 1px solid;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 10px 0;
+
+	transition: background-color 0.15s ease-in-out; //Note: consider a mixin for these!
+	-moz-transition: background-color 0.15s ease-in-out;
+	-webkit-transition: background-color 0.15s ease-in-out;
+}
+
+.nav-btn:focus,
+.nav-btn:hover {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.nav-btn_blue {
+	border-color: #3d4b5d;
+	color: #3d4b5d;
+}
+
+.nav-btn_white {
+	border-color: white;
+	color: white;
+}
+
+.nav-list li {
+	display: inline;
+	width: 20%;
+	float: left;
+	padding: 5px;
+}
+
+.nav_home-logo {
+	width: 50px;
+	margin: 5px auto;
+	display: block;
+}
+
+/* Sticky Footer Navigation */
+
+.nav-bottom {
+	display: none;
+}
+
+.nav-bottom_menu {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: $orange;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+
+.nav-bottom_menu li {
+	display: inline-block;
+	width: 20%;
+	line-height: 50px;
+	text-align: center;
+}
+
+.nav-bottom_menu a {
+	float: left;
+	width: 100%;
+	color: white;
+}
+
+.nav-bottom_menu a:focus,
+.nav-bottom_menu a:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	/* For IE8 and earlier */
+}
+
+.nav-bottom_menu img {
+	display: block;
+	width: 30px;
+	margin: 10px auto;
+}

@@ -1,0 +1,48 @@
+/**********/
+
+/* GLOBAL */
+
+/**********/
+
+/* Box Model Fix */
+
+html {
+	box-sizing: border-box;
+	background-color: white;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+/* Clearfix */
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Vertically Center Content */
+
+.center-content {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
